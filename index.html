@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Professional Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>My Blog</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#posts">Posts</a></li>
+                    <li><a href="#manage">Manage</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><button id="toggle-theme">🌙</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Welcome to My Blog</h2>
+            <p>Sharing ideas, stories, and tutorials with the world!</p>
+        </div>
+    </section>
+
+    <section id="posts" class="posts-section">
+        <div class="container">
+            <h2>Recent Posts</h2>
+            <div id="posts-container" class="posts-container"></div>
+        </div>
+    </section>
+
+    <section id="manage" class="manage-posts-section">
+        <div class="container">
+            <h2>Manage Posts</h2>
+            <form id="post-form">
+                <input type="hidden" id="post-index">
+                <input type="text" id="title" placeholder="Post Title" required>
+                <input type="text" id="image" placeholder="Image URL" required>
+                <textarea id="content" placeholder="Post Content" rows="4" required></textarea>
+                <button type="submit">Add Post</button>
+                <button type="button" id="cancel-edit" style="display:none;">Cancel Edit</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hello! I'm a writer and developer passionate about sharing knowledge through blogging. This is my professional blog template.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 My Blog. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
